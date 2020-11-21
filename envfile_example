@@ -1,0 +1,4 @@
+docker_tag=heroku_jn
+jnrootdir=nbs
+heroku_app=your-appname-87049
+password=password
