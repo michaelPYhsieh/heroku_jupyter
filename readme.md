@@ -14,7 +14,8 @@
 1. `heroku login`
 1. `heroku container:login`
 1. login heroku (cli) `heroku container:login`
-1. docker build & push to heroku: `./scripts/d_b+h_r.sh`
+1. docker build & push to heroku: `./scripts/d_b+h_r.sh` or do it manually: `docker build -t $docker_tag -f Dockerfile .` & `heroku container:push web -a $heroku_app` & `heroku container:release web -a $heroku_app`
+
 
 > https://stark-sands-87049.herokuapp.com/
 
