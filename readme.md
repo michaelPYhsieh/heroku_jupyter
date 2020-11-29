@@ -4,17 +4,14 @@
 
 # How to use
 
-1. clone this repo
-1. `cd heroku_jupyter`
-1. you can also add other python packages: `pipenv install <package_name>`, or just replace pipfiles
-1. install docker, heroku cli first
-1. create an new app on heruko
-1. `mv envfile_example envfile` then fill your: notebook password `password`, app name `heroku_app`.
-1. `heroku login`
-1. `heroku container:login` login heroku (cli) 
+* clone this repo
+* `cd heroku_jupyter`
 
-1. `./scripts/d_build.sh` build locally
-
-1. push to heroku: `./scripts/h_push+release.sh` or do it manually: `heroku container:push web -a $heroku_app` & `heroku container:release web -a $heroku_app`
+* you can also add other python packages: `pipenv install <package_name>`, or just replace pipfiles
+* install Docker, Heroku CLI, and create an new app on Heruko first
+* `mv envfile_example envfile` , fill your: notebook password `password`, app name `heroku_app`.
+* `heroku login` & `heroku container:login`
+* if you want to build locally `./scripts/d_build.sh` & `/usr/local/bin/jupyter notebook --allow-root --config=./conf/jupyter.py`
+* push to heroku: `./scripts/h_push+release.sh`
 
 > https://heroku-jupyter-87049.herokuapp.com/
