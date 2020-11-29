@@ -7,18 +7,6 @@ verify_ssl = true
 
 [packages]
 jupyter = "*"
-requests = "*"
-lxml = "*"
-flask = "*"
-urllib3 = "*"
-selenium = "*"
-beautifulsoup4 = "*"
-pandas = "*"
-matplotlib = "*"
-seaborn = "*"
-plotly = "*"
-scikit-learn = "*"
-numpy = "*"
 
 [requires]
 python_version = "3.7"

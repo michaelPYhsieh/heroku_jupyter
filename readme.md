@@ -1,10 +1,9 @@
 # About This Project
+
 > This project deploy jupyter notebook server on heruko through docker.
 
-
-
-
 # How to use
+
 1. clone this repo
 1. `cd heroku_jupyter`
 1. you can also add other python packages: `pipenv install <package_name>`, or just replace pipfiles
@@ -12,11 +11,10 @@
 1. create an new app on heruko
 1. `mv envfile_example envfile` then fill your: notebook password `password`, app name `heroku_app`.
 1. `heroku login`
-1. `heroku container:login`
-1. login heroku (cli) `heroku container:login`
+1. `heroku container:login` login heroku (cli) 
+
+1. `./scripts/d_build.sh` build locally
+
 1. push to heroku: `./scripts/h_push+release.sh` or do it manually: `heroku container:push web -a $heroku_app` & `heroku container:release web -a $heroku_app`
 
-
-> https://stark-sands-87049.herokuapp.com/
-
-
+> https://heroku-jupyter-87049.herokuapp.com/

@@ -1,4 +1,4 @@
 docker_tag=heroku_jn
 jnrootdir=homepage
-heroku_app=stark-sands-87049
+heroku_app=heroku-jupyter-87049
 password=password
