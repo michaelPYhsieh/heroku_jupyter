@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /usr/local/bin/jupyter notebook --allow-root --config=./conf/jupyter.py
+  web: ./scripts/entrypoint.sh
